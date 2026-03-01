@@ -1,0 +1,39 @@
+{
+  "name": "dxscan",
+  "version": "0.0.1",
+  "description": "Command-line utility for Node.js that checks for absent standard npm packages in a project.",
+  "main": "dist/cli.js",
+  "bin": {
+    "dxscan": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "cli",
+    "npm",
+    "dx",
+    "developer-experience",
+    "utilities",
+    "analyzer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/node": "^25.2.0",
+    "commander": "^14.0.3",
+    "glob": "^13.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
